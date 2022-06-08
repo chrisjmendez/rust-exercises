@@ -1,6 +1,6 @@
 
-# Created by https://www.toptal.com/developers/gitignore/api/windows,macos,rust,sublimetext,webstorm+all,intellij+all
-# Edit at https://www.toptal.com/developers/gitignore?templates=windows,macos,rust,sublimetext,webstorm+all,intellij+all
+# Created by https://www.toptal.com/developers/gitignore/api/macos,windows,webstorm+all,sublimetext,intellij+all,rust
+# Edit at https://www.toptal.com/developers/gitignore?templates=macos,windows,webstorm+all,sublimetext,intellij+all,rust
 
 ### Intellij+all ###
 # Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio, WebStorm and Rider
@@ -253,4 +253,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.toptal.com/developers/gitignore/api/windows,macos,rust,sublimetext,webstorm+all,intellij+all
+# End of https://www.toptal.com/developers/gitignore/api/macos,windows,webstorm+all,sublimetext,intellij+all,rust
