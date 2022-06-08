@@ -6,9 +6,10 @@ use clap::{Arg, Command};
 fn main() {
 
     let matches = Command::new("My CLI Command")
-        .version("1.0")
-        .author("Chris. <support@chrisaiv.com>")
-        .override_help("My First Command")
+        .version("v1.0" )
+        .about( "Description" )
+        .author( "Chris. <support@chrisaiv.com>")
+        .override_help("My First Command" )
         .arg(Arg::new("config")
             .short('c')
             .long("config")
