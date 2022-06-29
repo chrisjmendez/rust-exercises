@@ -1,5 +1,10 @@
 
 fn main() {
+    let get    = Method::GET;
+    let delete = Method::DELETE;
+    let post   = Method::POST;
+    let put    = Method::PUT;
+
     let server = Server::new("127.0.0.1:8080".to_string());
         server.run();
 }
@@ -24,7 +29,7 @@ impl Server {
         }
     }
 
-    // C. Run function takes ownership of the struct for this demo
+    // D. Run function takes ownership of the struct for this demo
     fn run(self) {
         println!("Listening on {}", self.addr)
     }
@@ -33,6 +38,18 @@ impl Server {
 // Rust enums are similar to the algabraic data-types in Haskell
 struct Request {
     path: String,
-    query_string: String,
-    method: String
+    // This is how, in Rust, you can introduce Null in a type-safe way
+    query_string: Option<String>,
+    method: Method
+}
+
+enum Method {
+    GET,
+    DELETE,
+    POST,
+    PUT,
+    CONNECT,
+    OPTIONS,
+    TRACE,
+    PATCH
 }
